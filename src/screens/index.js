@@ -2,7 +2,8 @@ import React from 'react';
 
 import { View,Text, StatusBar } from 'react-native';
 
-import LoginScreen from './loginScreen';
+import LoginScreen from './Login/index';
+import MainScreen from './MainScreen/index'
 
 
 export default function App(){
@@ -10,7 +11,7 @@ export default function App(){
     return (
         <>
         <StatusBar backgroundColor='#919191'/>
-        <LoginScreen/>
+        <MainScreen/>
         </>
     )
 
