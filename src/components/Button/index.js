@@ -2,22 +2,36 @@ import React from 'react';
 import { TouchableOpacity, Text, View, Alert } from 'react-native';
 
 
+const Button = (props) => {
 
-import styles from './style'
-
-const Button = () => {
+    const ret = () => {
+        Alert.alert("Button Pressed")
+    }
 
     return (
-            <View style={{backgroundColor: 'white', height: '30%', width:'100%'}}>
+                <TouchableOpacity onPress={ret} style={styles.ButtonsStyle} >
 
-                <TouchableOpacity onPress={() => Alert.alert('pressed')} style={styles.ButtonsStyle}>
-
+                    <Text style={styles.ButtonTextStyle}> {props.text} </Text>
 
                 </TouchableOpacity>
-
-
-            </View>
     )
 }
+
+const styles = {    
+    ButtonsStyle: {
+        backgroundColor: '#919191',
+        width: '40%',
+        height: '63%',
+        alignItems: 'center',
+        borderRadius: 16,
+        justifyContent: 'center',
+
+    },
+
+    ButtonTextStyle: {
+        color: 'white'
+    }
+}
+
 
 export default Button;

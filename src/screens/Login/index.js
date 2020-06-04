@@ -6,7 +6,7 @@ import {styles} from './styles';
 
 
 
-const LoginScreen = () => {
+const LoginScreen = ( {navigation}) => {
     
     const backgroudImgPath = "../../assets/loginBackground.jpg"
 
@@ -27,7 +27,7 @@ const LoginScreen = () => {
 
                     <View style={styles.buttonsLoginArea}>
                         <TouchableOpacity style={styles.buttonsStyle}
-                        onPress={() => Alert.alert('pressed')}>
+                        onPress={() => navigation.navigate('MainScreen')}>
 
                             <Text style={styles.buttonsTextStyle}>Enter</Text>
 

@@ -5,13 +5,17 @@ import { View, TouchableOpacity, Text } from 'react-native';
 
 import  Button from '../../components/Button/index';
 
+import { styles } from './styles';
+
+
 
 const MainScreen = () => {
 
-    return (
-        <View style={{flex:1, backgroundColor: 'black'}}>
 
-            <Button></Button>
+    return (
+        <View style={styles.Container}>
+
+            <Text>caralho</Text>
 
         </View>
     )
