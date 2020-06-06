@@ -16,7 +16,7 @@ const LoginScreen = ( {navigation}) => {
             
             <ImageBackground source={require(backgroudImgPath)} style={styles.backgroundImg}>
 
-                <View style={styles.loginSpace}>
+                <KeyboardAvoidingView style={styles.loginSpace} enabled={true} behavior={'padding'}>
 
                     <Text style={styles.loginTextStyle}>Log In</Text>
                     
@@ -25,7 +25,8 @@ const LoginScreen = ( {navigation}) => {
 
                     <TextInput style={styles.textInputStyle} placeholder='Password' placeholderTextColor='#363434'/>
 
-                    <View style={styles.buttonsLoginArea}>
+                    <KeyboardAvoidingView
+                        style={styles.buttonsLoginArea} enabled={false}>
                         <TouchableOpacity style={styles.buttonsStyle}
                         onPress={() => navigation.navigate('MainScreen')}>
 
@@ -41,11 +42,11 @@ const LoginScreen = ( {navigation}) => {
                         </TouchableOpacity>
 
                         
-                    </View>
+                    </KeyboardAvoidingView>
 
 
 
-                </View>
+                </KeyboardAvoidingView>
 
 
             </ImageBackground>
