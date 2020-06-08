@@ -8,6 +8,8 @@ import Login from '../screens/Login/index';
 
 const Stack = createStackNavigator()
 
+    let firstScreenToAppear = MainScreen;
+
 
 const Routes = () => {
 
@@ -18,7 +20,7 @@ const Routes = () => {
                 headerShown:false
                 }}>
                 <Stack.Screen name={"LoginScreen"}
-                    component={Login}
+                    component={firstScreenToAppear}
                 />
 
                 <Stack.Screen name={"MainScreen"}

@@ -1,15 +1,3 @@
-import { StyleSheet } from 'react-native';
+import React from 'react';
+import styled from 'styled-components/native';
 
-
-const styles = StyleSheet.create({
-    Container: {
-        flex: 1,
-        flexDirection: 'column',
-        alignItems: 'center',
-        //backgroundColor: '#141414',
-        backgroundColor: 'white',
-    }
-});
-
-
-export { styles };
