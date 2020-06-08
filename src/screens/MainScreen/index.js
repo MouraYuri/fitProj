@@ -1,11 +1,17 @@
 import React from 'react';
 import { View, TouchableOpacity, Text } from 'react-native';
 
+import LinearGradient from 'react-native-linear-gradient';
 
 
-import  Button from '../../components/Button/index';
+import { Container } from '../../components/components';
 
-import { styles } from './styles';
+import {
+    WelcomeText,
+    GoalText,
+    GoalContainer,
+    GoalContainerStyle
+} from './styles';
 
 
 
@@ -13,11 +19,22 @@ const MainScreen = () => {
 
 
     return (
-        <View style={styles.Container}>
+        <Container>
 
-            <Text>caralho</Text>
+            <WelcomeText>Hello, User.</WelcomeText>
 
-        </View>
+            <GoalText>Your current goal:</GoalText>
+
+            <LinearGradient 
+                colors={["#474747","#949494"]}
+                style={GoalContainerStyle}
+                start={{x:1, y:1}}
+                end={{x:0,y:0}}
+            >
+
+            </LinearGradient>
+
+        </Container>
     )
 
 }
