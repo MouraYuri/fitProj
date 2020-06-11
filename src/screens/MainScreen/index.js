@@ -1,21 +1,52 @@
 import React from 'react';
-import { View, TouchableOpacity, Text } from 'react-native';
+import {
+    View,
+    TouchableOpacity,
+    Text,
+    Image,
+    FlatList,
+    SafeAreaView
+} from 'react-native';
 
 import LinearGradient from 'react-native-linear-gradient';
 
 
-import { Container } from '../../components/components';
+import { Container, Item } from '../../components/components';
 
 import {
     WelcomeText,
     GoalText,
     GoalContainer,
-    GoalContainerStyle
+    GoalContainerStyle,
+    GoalAchievementIcon,
+    MenuContainer
 } from './styles';
 
 
-
 const MainScreen = () => {
+
+    const data = [
+        {
+            id:'0',
+            title: "training",
+            src: ""
+        },
+        {
+            id:'1',
+            title: "statistics",
+            src: ""
+        },
+        {
+            id:'2',
+            title: "schedule",
+            src: ""
+        },
+        {
+            id:'3',
+            title: "music",
+            src: ""
+        }
+    ]
 
 
     return (
@@ -31,8 +62,26 @@ const MainScreen = () => {
                 start={{x:1, y:1}}
                 end={{x:0,y:0}}
             >
+                <Image
+                    source={require('../../assets/icons/achievement-icon.png')}
+                    style={GoalAchievementIcon}
+                    resizeMode={'center'}
+                />
+
 
             </LinearGradient>
+
+            <MenuContainer>
+                <SafeAreaView style={{flex:1}}>
+                    <FlatList
+                        data={data}
+                        renderItem={({ item }) => <Item item={item}/>}
+                        keyExtractor={item => item.id}
+                        numColumns={2}
+                    />
+                </SafeAreaView>
+
+            </MenuContainer>
 
         </Container>
     )

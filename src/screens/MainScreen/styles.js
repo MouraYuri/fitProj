@@ -21,9 +21,26 @@ export const GoalText = styled.Text`
     font-weight: 600
 `
 
+export const MenuContainer = styled.View`
+    background-color: #0FBF6F
+    flex-direction: column
+    margin-horizontal: 20%
+    margin-top:5%
+    width:80%
+    height:50%
+    
+`
+
 export const GoalContainerStyle = {
     width: '80%',
     height: "20%",
     marginTop: '3%',
     borderRadius: 11
+}
+
+export const GoalAchievementIcon = {
+    width: '25%',
+    height: '50%',
+    marginTop:'10%',
+    margin: '5%'
 }
