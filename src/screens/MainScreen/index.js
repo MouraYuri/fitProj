@@ -19,7 +19,8 @@ import {
     GoalContainer,
     GoalContainerStyle,
     GoalAchievementIcon,
-    MenuContainer
+    MenuContainer,
+    MenuText
 } from './styles';
 
 
@@ -51,10 +52,10 @@ const MainScreen = () => {
 
     return (
         <Container>
-
             <WelcomeText>Hello, User.</WelcomeText>
 
             <GoalText>Your current goal:</GoalText>
+
 
             <LinearGradient 
                 colors={["#474747","#949494"]}
@@ -71,7 +72,10 @@ const MainScreen = () => {
 
             </LinearGradient>
 
+            <MenuText>Menu</MenuText>
+
             <MenuContainer>
+
                 <SafeAreaView style={{flex:1}}>
                     <FlatList
                         data={data}
