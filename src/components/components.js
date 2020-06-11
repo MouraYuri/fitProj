@@ -29,27 +29,30 @@ export const Container = (props) => {
 
 export const Item = (props)=> {
 
+    const srcPath =  props.item.src;
+
     const itemStyle = {
         flex:1,
         backgroundColor: "#FFFFFF",
-        marginTop: '10%',
         marginHorizontal: '5%',
+        marginVertical: '5%',
         flexDirection:'column',
         alignItems: 'center',
         borderRadius: 11
     }
 
     const imageStyle = {
-        width: '80%',
-        height: '80%'
+        width: 89,
+        height: 86,
     }
 
     return (
         <View style={itemStyle}>
 
             <Text>{props.item.title}</Text>
+
             <Image
-                source={require("../assets/icons/calendar.png")}
+                source={require(srcPath)}
                 resizeMode={'center'}
                 style={imageStyle}
             />

@@ -29,22 +29,22 @@ const MainScreen = () => {
         {
             id:'0',
             title: "training",
-            src: ""
+            src: "../assets/icons/letsdoit.png"
         },
         {
             id:'1',
             title: "statistics",
-            src: ""
+            src: "../assets/icons/statistics.png"
         },
         {
             id:'2',
             title: "schedule",
-            src: ""
+            src: "../assets/icons/calendar.png"
         },
         {
             id:'3',
             title: "music",
-            src: ""
+            src: "../assets/icons/headphones.png"
         }
     ]
 

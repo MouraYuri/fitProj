@@ -26,7 +26,7 @@ export const MenuContainer = styled.View`
     flex-direction: column
     margin-horizontal: 20%
     margin-top:5%
-    width:80%
+    width:95%
     height:50%
     
 `
