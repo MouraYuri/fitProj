@@ -28,23 +28,23 @@ const MainScreen = () => {
     const data = [
         {
             id:'0',
-            title: "training",
-            src: "../assets/icons/letsdoit.png"
+            title: "Let's do it",
+            src: "letsdoit"
         },
         {
             id:'1',
-            title: "statistics",
-            src: "../assets/icons/statistics.png"
+            title: "Statistics",
+            src: "statistics"
         },
         {
             id:'2',
-            title: "schedule",
-            src: "../assets/icons/calendar.png"
+            title: "Schedule",
+            src: "calendar"
         },
         {
             id:'3',
-            title: "music",
-            src: "../assets/icons/headphones.png"
+            title: "Music",
+            src: "headphones"
         }
     ]
 
@@ -63,7 +63,7 @@ const MainScreen = () => {
                 end={{x:0,y:0}}
             >
                 <Image
-                    source={require('../../assets/icons/achievement-icon.png')}
+                    source={require('../../assets/icons/trophy.png')}
                     style={GoalAchievementIcon}
                     resizeMode={'center'}
                 />

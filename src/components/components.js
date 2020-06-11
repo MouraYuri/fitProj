@@ -33,30 +33,46 @@ export const Item = (props)=> {
 
     const itemStyle = {
         flex:1,
-        backgroundColor: "#FFFFFF",
+        backgroundColor: "#c4c4c4",
         marginHorizontal: '5%',
-        marginVertical: '5%',
+        marginTop:'5%',
         flexDirection:'column',
         alignItems: 'center',
-        borderRadius: 11
+        borderRadius: 11,
+        height:130,
+        width: 100,
+        borderColor:'#B91212',
+        borderWidth: 2,
+
     }
 
     const imageStyle = {
-        width: 89,
+        width: 75,
         height: 86,
     }
 
-    return (
-        <View style={itemStyle}>
+    const textStyle = {
+        color: '#FFFFFF',
+        fontSize: 22,
+        fontWeight: 'bold',
+        marginTop:'5%'
+    }
 
-            <Text>{props.item.title}</Text>
+    return (
+        <TouchableOpacity 
+            style={itemStyle}
+        >
+
+            <Text style={textStyle}>{props.item.title}</Text>
 
             <Image
-                source={require(srcPath)}
+                source={{
+                    uri: props.item.src
+                }}
                 resizeMode={'center'}
                 style={imageStyle}
             />
 
-        </View>
+        </TouchableOpacity>
     )
 }
