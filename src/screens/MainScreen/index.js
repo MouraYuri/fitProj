@@ -20,7 +20,8 @@ import {
     GoalAchievementIcon,
     MenuContainer,
     MenuText,
-    Header
+    Header,
+    IconCircleContainer
 } from './styles';
 
 
@@ -61,11 +62,18 @@ const MainScreen = () => {
 
 
             <GoalContainer>
-                <Image
-                    source={require('../../assets/icons/trophy.png')}
-                    style={GoalAchievementIcon}
-                    resizeMode={'center'}
-                />
+
+                <IconCircleContainer>
+
+                    <Image
+                        source={require('../../assets/icons/trophy.png')}
+                        style={GoalAchievementIcon}
+                        resizeMode={'center'}
+                    />
+
+                </IconCircleContainer>
+
+
 
 
             </GoalContainer>

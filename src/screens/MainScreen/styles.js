@@ -38,11 +38,14 @@ export const GoalContainer = styled.View`
     margin-top: 3%
     border-radius: 11px
     z-index: 1
+    flex-direction: row
+    align-items: center
+    
 `
 
 export const GoalAchievementIcon = {
-    width: '25%',
-    height: '50%',
+    width: '60%',
+    height: '90%',
     marginTop:'10%',
     margin: '5%'
 }
@@ -63,4 +66,17 @@ export const Header = styled.View`
     border-bottom-left-radius: 11px
     border-bottom-right-radius: 11px
 
+`
+
+export const IconCircleContainer = styled.View`
+    position: absolute
+    z-index: 0
+    border-radius: 50px
+    background-color: #D8D8D8
+    width: 30%
+    height: 75%
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    margin-left: 5%
 `

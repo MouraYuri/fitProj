@@ -16,14 +16,15 @@ import GoalContainerStyle from '../screens/MainScreen/styles';
 
 export const Container = (props) => {
     return(
-        <LinearGradient colors={['#02010a', '#424242']}
+        <View
         style={{
+            backgroundColor: 'black',
             flex:1,
             flexDirection: 'column',
             alignItems:'center'
         }}>
             {props.children}
-        </LinearGradient>
+        </View>
     )
 }
 
