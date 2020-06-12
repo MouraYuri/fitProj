@@ -17,10 +17,10 @@ import {
     WelcomeText,
     GoalText,
     GoalContainer,
-    GoalContainerStyle,
     GoalAchievementIcon,
     MenuContainer,
-    MenuText
+    MenuText,
+    Header
 } from './styles';
 
 
@@ -52,17 +52,15 @@ const MainScreen = () => {
 
     return (
         <Container>
+
+            <Header/>
+
             <WelcomeText>Hello, User.</WelcomeText>
 
             <GoalText>Your current goal:</GoalText>
 
 
-            <LinearGradient 
-                colors={["#474747","#949494"]}
-                style={GoalContainerStyle}
-                start={{x:1, y:1}}
-                end={{x:0,y:0}}
-            >
+            <GoalContainer>
                 <Image
                     source={require('../../assets/icons/trophy.png')}
                     style={GoalAchievementIcon}
@@ -70,7 +68,7 @@ const MainScreen = () => {
                 />
 
 
-            </LinearGradient>
+            </GoalContainer>
 
             <MenuText>Menu</MenuText>
 
@@ -86,6 +84,7 @@ const MainScreen = () => {
                 </SafeAreaView>
 
             </MenuContainer>
+
 
         </Container>
     )

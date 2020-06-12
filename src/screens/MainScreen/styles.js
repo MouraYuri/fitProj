@@ -26,15 +26,19 @@ export const MenuContainer = styled.View`
     margin-horizontal: 20%
     width:95%
     height:50%
+    z-index: 1
     
 `
 
-export const GoalContainerStyle = {
-    width: '80%',
-    height: "20%",
-    marginTop: '3%',
-    borderRadius: 11
-}
+
+export const GoalContainer = styled.View`
+    background-color: #ACAAAA
+    width: 80%
+    height: 20%
+    margin-top: 3%
+    border-radius: 11px
+    z-index: 1
+`
 
 export const GoalAchievementIcon = {
     width: '25%',
@@ -50,7 +54,13 @@ export const MenuText = styled.Text`
     margin-top: 3%
 `
 
-// export const Header = styled.View`
-//     background-color: #B91212
+export const Header = styled.View`
+    background-color: #B91212
+    z-index: 0
+    width: 100%
+    height: 205px
+    position: absolute
+    border-bottom-left-radius: 11px
+    border-bottom-right-radius: 11px
 
-// `
+`
