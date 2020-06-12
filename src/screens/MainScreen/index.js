@@ -8,20 +8,19 @@ import {
     SafeAreaView
 } from 'react-native';
 
-import LinearGradient from 'react-native-linear-gradient';
-
-
 import { Container, Item } from '../../components/components';
 
 import {
     WelcomeText,
-    GoalText,
+    GoalPresentationText,
     GoalContainer,
     GoalAchievementIcon,
     MenuContainer,
     MenuText,
     Header,
-    IconCircleContainer
+    IconCircleContainer,
+    GoalTitleText,
+    GoalDateText
 } from './styles';
 
 
@@ -50,6 +49,9 @@ const MainScreen = () => {
         }
     ]
 
+    let goal = "Lose weight";
+    let timebox = "Started: 10/06\nEndline: 12/08";
+
 
     return (
         <Container>
@@ -58,7 +60,7 @@ const MainScreen = () => {
 
             <WelcomeText>Hello, User.</WelcomeText>
 
-            <GoalText>Your current goal:</GoalText>
+            <GoalPresentationText>Your current goal:</GoalPresentationText>
 
 
             <GoalContainer>
@@ -73,8 +75,9 @@ const MainScreen = () => {
 
                 </IconCircleContainer>
 
+                <GoalTitleText>{goal}</GoalTitleText>
 
-
+                <GoalDateText>{timebox}</GoalDateText>
 
             </GoalContainer>
 

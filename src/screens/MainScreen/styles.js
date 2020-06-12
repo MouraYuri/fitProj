@@ -12,7 +12,7 @@ export const WelcomeText = styled.Text`
     margin-left: 10%
 `
 
-export const GoalText = styled.Text`
+export const GoalPresentationText = styled.Text`
     color: #FFFFFF
     font-size: 24px
     align-self: flex-start
@@ -38,13 +38,14 @@ export const GoalContainer = styled.View`
     margin-top: 3%
     border-radius: 11px
     z-index: 1
-    flex-direction: row
+    flex-direction: column
     align-items: center
+    justify-content: center
     
 `
 
 export const GoalAchievementIcon = {
-    width: '60%',
+    width: 75,
     height: '90%',
     marginTop:'10%',
     margin: '5%'
@@ -79,4 +80,20 @@ export const IconCircleContainer = styled.View`
     align-items: center
     justify-content: center
     margin-left: 5%
+    align-self: flex-start
 `
+
+export const GoalTitleText = styled.Text`
+    color: #FFFFFF
+    font-weight: 700
+    font-size: 24px
+    padding-left: 30%
+    
+`
+
+export const GoalDateText = styled.Text`
+    color: #FFFFFF
+    font-size:16px
+    padding-left: 22%
+`
+
