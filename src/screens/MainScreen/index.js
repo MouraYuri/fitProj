@@ -5,7 +5,8 @@ import {
     Text,
     Image,
     FlatList,
-    SafeAreaView
+    SafeAreaView,
+    Alert
 } from 'react-native';
 
 import { Container, Item } from '../../components/components';
@@ -20,7 +21,9 @@ import {
     Header,
     IconCircleContainer,
     GoalTitleText,
-    GoalDateText
+    GoalDateText,
+    LogoutButton,
+    LogoutIconStyle
 } from './styles';
 
 
@@ -56,7 +59,15 @@ const MainScreen = () => {
     return (
         <Container>
 
-            <Header/>
+            <Header>
+                <LogoutButton onPress={()=> Alert.alert('logout..')}>
+                    <Image
+                    source={require('../../assets/icons/logout.png')}
+                    style={LogoutIconStyle}
+                    resizeMode={'center'}
+                    />
+                </LogoutButton>
+            </Header>
 
             <WelcomeText>Hello, User.</WelcomeText>
 
@@ -78,6 +89,8 @@ const MainScreen = () => {
                 <GoalTitleText>{goal}</GoalTitleText>
 
                 <GoalDateText>{timebox}</GoalDateText>
+
+
 
             </GoalContainer>
 

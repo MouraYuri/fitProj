@@ -97,3 +97,11 @@ export const GoalDateText = styled.Text`
     padding-left: 22%
 `
 
+export const LogoutButton = styled.TouchableOpacity`
+`
+export const LogoutIconStyle  = {
+    width: '9%',
+    height: '30%',
+    alignSelf: 'flex-end',
+    margin: '5%'
+}
