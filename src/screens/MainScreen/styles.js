@@ -38,9 +38,9 @@ export const GoalContainer = styled.View`
     margin-top: 3%
     border-radius: 11px
     z-index: 1
-    flex-direction: column
+    flex-direction: row
     align-items: center
-    justify-content: center
+    
     
 `
 
@@ -75,11 +75,13 @@ export const IconCircleContainer = styled.View`
     border-radius: 50px
     background-color: #D8D8D8
     width: 30%
-    height: 75%
+    height: 60%
     flex-direction: column
     align-items: center
     justify-content: center
+    margin-bottom: 5%
     margin-left: 5%
+    margin-top: 5%
     align-self: flex-start
 `
 
@@ -87,14 +89,16 @@ export const GoalTitleText = styled.Text`
     color: #FFFFFF
     font-weight: 700
     font-size: 24px
-    padding-left: 30%
+    align-self: flex-start
+    top: 0%
+    left: 95%
     
 `
 
 export const GoalDateText = styled.Text`
     color: #FFFFFF
     font-size:16px
-    padding-left: 22%
+    right: 5%
 `
 
 export const LogoutButton = styled.TouchableOpacity`
@@ -104,4 +108,12 @@ export const LogoutIconStyle  = {
     height: '30%',
     alignSelf: 'flex-end',
     margin: '5%'
+}
+
+export const MoreDetailsButton = styled.TouchableOpacity`
+`
+
+export const MoreDetailsIconStyle = {
+    width: 50,
+    height: 50,
 }

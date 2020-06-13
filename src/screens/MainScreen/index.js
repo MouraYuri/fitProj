@@ -23,7 +23,9 @@ import {
     GoalTitleText,
     GoalDateText,
     LogoutButton,
-    LogoutIconStyle
+    LogoutIconStyle,
+    MoreDetailsButton,
+    MoreDetailsIconStyle
 } from './styles';
 
 
@@ -90,7 +92,13 @@ const MainScreen = () => {
 
                 <GoalDateText>{timebox}</GoalDateText>
 
-
+                <MoreDetailsButton>
+                    <Image
+                        source={require('../../assets/icons/moredetails.png')}
+                        style={MoreDetailsIconStyle}
+                        resizeMode={'center'}
+                    />
+                </MoreDetailsButton>
 
             </GoalContainer>
 
