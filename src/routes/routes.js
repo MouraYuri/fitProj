@@ -8,7 +8,7 @@ import Login from '../screens/Login/index';
 
 const Stack = createStackNavigator()
 
-    let firstScreenToAppear = MainScreen;
+    let firstScreenToAppear = Login;
 
 
 const Routes = () => {
