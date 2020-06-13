@@ -92,13 +92,15 @@ export const GoalTitleText = styled.Text`
     align-self: flex-start
     top: 0%
     left: 95%
+    margin-top: 3%
     
 `
 
 export const GoalDateText = styled.Text`
     color: #FFFFFF
     font-size:16px
-    right: 5%
+    right: 8%
+    margin-top: 3%
 `
 
 export const LogoutButton = styled.TouchableOpacity`
@@ -114,6 +116,7 @@ export const MoreDetailsButton = styled.TouchableOpacity`
 `
 
 export const MoreDetailsIconStyle = {
-    width: 50,
-    height: 50,
+    width: 40,
+    height: 40,
+    left: '30%'
 }
