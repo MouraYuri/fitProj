@@ -4,11 +4,12 @@ import { createStackNavigator } from '@react-navigation/stack';
 
 import MainScreen from '../screens/MainScreen/index';
 import Login from '../screens/Login/index';
+import LetsDoIt from '../screens/LetsDoIt/index';
 
 
 const Stack = createStackNavigator()
 
-    let firstScreenToAppear = Login;
+    let firstScreenToAppear = LetsDoIt;
 
 
 const Routes = () => {

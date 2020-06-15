@@ -12,6 +12,7 @@ import {
 import LinearGradient from 'react-native-linear-gradient';
 
 import GoalContainerStyle from '../screens/MainScreen/styles';
+import { TouchableWithoutFeedback, TouchableHighlight } from 'react-native-gesture-handler';
 
 
 export const Container = (props) => {
@@ -75,5 +76,52 @@ export const Item = (props)=> {
             />
 
         </TouchableOpacity>
+    )
+}
+
+export const Header = (props) => {
+    const HeaderStyle = {
+        flexDirection: 'row',
+        backgroundColor: "#0F0FAF",
+        width: '100%',
+        height: '10%',
+        marginTop: '5%',
+        alignItems: 'center'
+    }
+
+    const BackButtonTouchableStyle = {
+        width: '20%',
+        height: '80%',
+        marginLeft: '5%',
+        alignSelf: 'flex-start',
+        //backgroundColor: '#BFCCC0',
+        alignItems: 'center',
+        justifyContent: 'center'
+    }
+
+    const BackButtonIconStyle = {
+        width: 200,
+        height:'100%'
+    }
+
+    return(
+        <View
+            style={HeaderStyle}
+        >
+            <TouchableHighlight
+                style={BackButtonTouchableStyle}
+                onPress={() => console.log('back-button!!')}
+            >
+                <Image
+                        source={require('../assets/icons/back.png')}
+                        style={BackButtonIconStyle}
+                        resizeMode={'center'}
+                />
+
+            </TouchableHighlight>
+
+
+            {props.children}
+        </View>
     )
 }
